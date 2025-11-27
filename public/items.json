@@ -1,4 +1,3 @@
-[
 {"date_prop_id":"P571","description":"Sovereign country comprising the mainland of the Australian continent, the island of Tasmania and numerous smaller islands","id":"Q408","image":"Australia_-_CIA_WFB_Map.png","instance_of":["sovereign state","country"],"label":"Australia","occupations":null,"page_views":null,"wikipedia_title":"Australia","year":1901},
 {"date_prop_id":"P571","description":"Iconic performing‑arts centre on Bennelong Point in Sydney Harbour","id":"Q45178","image":"Sydney_Opera_House_Sails.jpg","instance_of":["opera house","architectural landmark","tourist attraction"],"label":"Sydney Opera House","occupations":null,"page_views":null,"wikipedia_title":"Sydney Opera House","year":1973},
 {"date_prop_id":"P571","description":"National flag of the Commonwealth of Australia","id":"Q81676","image":"Flag_of_Australia.svg","instance_of":["flag"],"label":"Flag of Australia","occupations":null,"page_views":null,"wikipedia_title":"Flag of Australia","year":1901},
@@ -20,5 +19,3 @@
 {"date_prop_id":"P571","description":"Destructive bushfires across southeastern Australia","id":"Q801616","image":"Black_Saturday_fires.jpg","instance_of":["natural disaster","bushfire"],"label":"Black Saturday bushfires","occupations":null,"page_views":null,"wikipedia_title":"Black Saturday bushfires","year":2009},
 {"date_prop_id":"P571","description":"Australian rules footballer and coach, famously nicknamed 'The King'","id":"Q75987","image":"Ron_Barassi.jpg","instance_of":["human","athlete"],"label":"Ron Barassi","occupations":["footballer","coach"],"page_views":null,"wikipedia_title":"Ron Barassi","year":1936},
 {"date_prop_id":"P585","description":"Landmark High Court of Australia decision recognizing native title rights for the Meriam people in the Torres Strait","id":"Q664364","image":"Eddie_Mabo.jpg", "instance_of":["court case","legal decision"],"label":"Mabo v Queensland (No 2)", "occupations":null, "page_views":null, "wikipedia_title":"Mabo v Queensland (No 2)","year":1992}
-]
-
