@@ -30,9 +30,6 @@ export default function Game() {
         // Filter cards which have bad data as submitted in https://github.com/tom-james-watson/wikitrivia/discussions/2
         .filter((item) => !(item.id in badCards));
       setItems(items);
-      const familyCards = items.filter(item => item.category === "family");
-      const triviaCards = items.filter(item => item.category !== "family");
-      setItems(deck);
     };
 
     fetchGameData();
