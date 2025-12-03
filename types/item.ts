@@ -10,6 +10,7 @@ export interface Item {
   page_views: number;
   wikipedia_title: string;
   year: number;
+  category: string;
 }
 
 export type PlayedItem = Item & {
