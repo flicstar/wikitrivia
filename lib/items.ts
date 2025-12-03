@@ -2,6 +2,16 @@ import { Item, PlayedItem } from "../types/item";
 import { createWikimediaImage } from "./image";
 
 export function getRandomItem(deck: Item[], played: Item[]): Item {
+  const useFamily = Math.random() < 0.25; // 1 in 4 cards
+
+  const familyCandidates = deck.filter(c => c.category === "family");
+  const triviaCandidates = deck.filter(c => c.category !== "family");
+
+  // choose which pool we select from
+  const source = useFamily && familyCandidates.length > 0
+    ? familyCandidates
+    : triviaCandidates;
+    
   const periods: [number, number][] = [
     [-100000, 1000],
     [1000, 1800],
@@ -10,7 +20,7 @@ export function getRandomItem(deck: Item[], played: Item[]): Item {
   const [fromYear, toYear] =
     periods[Math.floor(Math.random() * periods.length)];
   const avoidPeople = Math.random() > 0.5;
-  const candidates = deck.filter((candidate) => {
+  const candidates = source.filter((candidate) => {
     if (avoidPeople && candidate.instance_of.includes("human")) {
       return false;
     }
