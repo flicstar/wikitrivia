@@ -8,6 +8,27 @@ import Loading from "./loading";
 import Instructions from "./instructions";
 import badCards from "../lib/bad-cards";
 
+/**
+ * Mixes trivia and family cards into a deck, inserting one family card every `gap` trivia cards.
+ * If family runs out, just serves trivia. If trivia runs out, continues with remaining family.
+ */
+function buildDeck(trivia: Item[], family: Item[], gap: number = 4): Item[] {
+  const deck: Item[] = [];
+  let triviaIdx = 0, familyIdx = 0;
+
+  while (triviaIdx < trivia.length || familyIdx < family.length) {
+    // Add up to `gap` trivia cards
+    for (let i = 0; i < gap && triviaIdx < trivia.length; i++) {
+      deck.push(trivia[triviaIdx++]);
+    }
+    // Add one family card if available
+    if (familyIdx < family.length) {
+      deck.push(family[familyIdx++]);
+    }
+  }
+  return deck;
+}
+
 export default function Game() {
   const [state, setState] = useState<GameState | null>(null);
   const [loaded, setLoaded] = useState(false);
