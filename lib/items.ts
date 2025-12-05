@@ -21,9 +21,6 @@ export function getRandomItem(deck: Item[], played: Item[]): Item {
     periods[Math.floor(Math.random() * periods.length)];
   const avoidPeople = Math.random() > 0.5;
   const candidates = source.filter((candidate) => {
-    if (avoidPeople && candidate.instance_of.includes("human")) {
-      return false;
-    }
     if (candidate.year < fromYear || candidate.year > toYear) {
       return false;
     }
