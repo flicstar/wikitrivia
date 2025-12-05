@@ -33,7 +33,7 @@ const datePropIdMap: { [datePropId: string]: string } = {
   P7125: "latest one",
   P7124: "first one",
   P2842: "married",
-  P1682: "graduated"
+  P1682: "graduated",
   P3150: "travelled",
 };
 
