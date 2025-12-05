@@ -93,7 +93,7 @@ export default function ItemCard(props: Props) {
             >
               <div className={styles.top}>
                 <div className={styles.label}>{capitalize(item.label)}</div>
-                <div className={styles.description}>{capitalize(type)}</div>
+                <div className={styles.description}>{type ? capitalize(type) : ""}</div>
               </div>
               <div
                 className={styles.image}
