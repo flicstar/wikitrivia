@@ -32,7 +32,9 @@ const datePropIdMap: { [datePropId: string]: string } = {
   P580: "started",
   P7125: "latest one",
   P7124: "first one",
-  F250: "graduated"
+  P2842: "married",
+  P1682: "graduated"
+  P3150: "travelled",
 };
 
 function capitalize(str: string): string {
