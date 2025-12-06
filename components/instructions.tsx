@@ -43,7 +43,7 @@ export default function Instructions(props: Props) {
             .
           </div>
           <div>
-            Have feedback? Please report it on{" "}
+            Got feedback? Please report it on{" "}
             <a
               href="https://github.com/tom-james-watson/wikitrivia/issues/"
               target="_blank"
